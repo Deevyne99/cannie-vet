@@ -1,5 +1,6 @@
 const overlay = document.querySelector('.overlay')
 const success = document.querySelector('.success')
+const successBtn = document.querySelector('.success-btn')
 const formSubmit = document.getElementById('regForm')
 var currentTab = 0 // Current tab is set to be the first tab (0)
 showTab(currentTab) // Display the current tab
@@ -86,7 +87,13 @@ function fixStepIndicator(n) {
   x[n].className += ' active'
 }
 
-const removeSuccess = () => {
+// const removeSuccess = () => {
+//   success.classList.remove('successful')
+//   overlay.classList.remove('overlay-active')
+// }
+
+successBtn.addEventListener('click', () => {
   success.classList.remove('successful')
   overlay.classList.remove('overlay-active')
-}
+  window.location = 'http://127.0.0.1:5500/index.html'
+})
