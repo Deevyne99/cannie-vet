@@ -95,5 +95,5 @@ function fixStepIndicator(n) {
 successBtn.addEventListener('click', () => {
   success.classList.remove('successful')
   overlay.classList.remove('overlay-active')
-  window.location = 'http://127.0.0.1:5500/index.html'
+  location.reload()
 })

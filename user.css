@@ -116,11 +116,17 @@
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   /* width: 100%; */
 }
 .user-info {
   display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
   flex-direction: column;
+}
+.user-info img {
+  width: 280px;
 }
 .user-details {
   display: flex;
@@ -129,6 +135,7 @@
   background: #000f37;
   color: #fff;
   padding: 10px;
+  width: 280px;
 }
 .book {
   display: flex;
