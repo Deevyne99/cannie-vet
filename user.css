@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
 .search {
-  width: 50%;
+  width: 100%;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 14px;
@@ -13,6 +13,13 @@
   justify-content: center;
   margin-top: 4rem;
   position: relative;
+}
+.search-form {
+  display: flex;
+  width: 600px;
+}
+input {
+  width: 100%;
 }
 .category-box {
   position: absolute;
@@ -127,6 +134,8 @@
 }
 .user-info img {
   width: 280px;
+  border-radius: 25px 25px 0 0;
+  /* height: 200px; */
 }
 .user-details {
   display: flex;
